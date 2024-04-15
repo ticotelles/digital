@@ -26,6 +26,8 @@
 - Ambiente de Desenvolvimento Configurado: ambiente de desenvolvimento para React (como Node.js, npm npm create vite@latest)
 
 - Conhecimento Básico de React: como criar componentes, gerenciar estado, e lidar com eventos em React
+  
+- Por está estudando os Teste ainda, não foi implementado
 
 
 
