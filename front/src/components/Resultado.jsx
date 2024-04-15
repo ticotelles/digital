@@ -3,18 +3,6 @@ import  { App }  from '../App';
 
 
 
-// function data ({
-//     company,
-//     weekSmallDogs,
-//     weekBigDogs,
-//     weekendSmallDogs,
-//     weekendBigDogs,
-//     distance,
-//     smallDogsCost,
-//     bigDogsCost,
-//     total,
-//   })
-
 
 const  Resultado = (results) => {
   return (
@@ -25,16 +13,6 @@ const  Resultado = (results) => {
   
   );
 }
-// Resultado.propTypes = {
-//   results: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       company: PropTypes.string.isRequired,
-//       total: PropTypes.number.isRequired,
-//       distance: PropTypes.string.isRequired
-//     })
-//   ).isRequired
-// };
-
 export default Resultado;
-// results.map(result =><div key={result.company}> { result.company } {result.total} {result.distance}
+
 
