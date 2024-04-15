@@ -4,16 +4,16 @@ const { petShopService } = require("../service");
 const petShopRoutes = Router();
 
 petShopRoutes.post("/", (req, res) => {
-  console.log("req.body", req.body);
 
   const { date, smallDogs, bigDogs } = req.body;
 
   if (!date) {
-    throw new Error('Falta a Data');
+   return res.status(400).send('Falta a Data');
+    
   }
 
   if (!smallDogs && !bigDogs) {
-    throw new Error('Falta o numero de cachorro');
+    return res.status(400).send('Falta informar a quantidade de Cachorro');
   }
 
   const bestPrices = petShopService.getBestPriceFromPetShops(

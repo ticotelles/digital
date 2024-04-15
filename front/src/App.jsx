@@ -1,7 +1,7 @@
 // import petshops from './services/petshop';
 import { useState } from "react";
 import axios from 'axios';
-import Resultado from "./components/Resultado";
+import Result from "./components/Result";
 import "./App.css";
 
 
@@ -21,11 +21,10 @@ export function App() {
     e.preventDefault();
     axios.post('http://localhost:3000/petshop', {  smallDogs,bigDogs, date })
     .then(function (response) {
-      console.log(response);
       setResults(response.data);
     })
     .catch(function (error) {
-      console.log(error);
+      alert(error.response.data)
     });
 
   };
@@ -52,7 +51,7 @@ export function App() {
         </div>
       </form>
       <div className="result">
-        { results?.map(item =><div key={item.company}> {item.data} PetShop: { item.company } - Total: R${item.total} - Distancia: {item.distance} m</div>)}
+        { results?.map(item =><Result key={item.company} result = {item} /> )}
 
       </div>
     </div>
