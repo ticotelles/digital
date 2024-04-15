@@ -27,7 +27,7 @@
 
 - Conhecimento Básico de React: como criar componentes, gerenciar estado, e lidar com eventos em React
   
-- Não foi usado os teste por que estou em estudo
+- Por está estudando os Teste ainda, não foi implementado
 
 
 
