@@ -30,20 +30,20 @@ export function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={handleSubmit} className="form-container">
         <div>
-          <h2>PetShop mais próximos da sua casa</h2>
+          <h2>PetShop mais próximo da sua casa</h2>
         </div>
 
         <div className="input-form">
-          <label htmlFor="date" >Data: </label>
+          <label id="labelDate" htmlFor="date" >Data: </label>
           <input type="date" className="inputs" id="date" onChange={handleDate}/>
 
-          <label htmlFor="smallDogs">Cães Pequenos: </label>
+          <label id="labelSmallDog" htmlFor="smallDogs">Cães Pequenos: </label>
           <input type="text" id="smallDogs" className="inputs" placeholder="Cães Pequenos" onChange={handleSmallDog}/>
 
-          <label htmlFor='bigDogs' >Cães Grandes: </label>
+          <label id="labelBigDog" htmlFor='bigDogs' >Cães Grandes: </label>
           <input type="text" id="bigDogs" className="inputs" placeholder="Cães Grandes" onChange={handleBigDog}/>
         </div>
         <div className="divBtn">

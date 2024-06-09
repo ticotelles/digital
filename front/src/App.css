@@ -7,13 +7,14 @@ body{
 }
 .input-form{
   margin: 0 auto;
+
  
 }
 .inputs{
   margin: 10px;
 }
 .form-container, .result{
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
@@ -31,8 +32,27 @@ body{
 }
 .result{
   margin-top: 5px;
+  font-size: 20px;
 }
 .inputs-container{
   min-height: 280px;
 }
+
+#labelDate{
+  font-size: 20px;  
+}
+
+#labelSmallDog{
+  font-size: 20px;
+}
+#labelBigDog{
+  font-size: 20px;
+}
+
+.inputs{
+  font-size: 16px;
+}
+
+
+
 
